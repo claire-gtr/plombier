@@ -1,0 +1,145 @@
+/*COULEURS DE BASE A CHANGER ICI SAUF POUR LES CARDS TARIFS*/
+:root{
+    --dark-blue: #3D5A80;
+    --blue: #98C1D9;
+    --light-blue: #E0FBFC;
+    --dark-grey:#293241;
+    --orange: #ED8962;
+    --font-banner: 'Rubik', sans-serif;
+    --font-color-banner: white;
+    --font-texts: 'Karla', sans-serif;
+    --font-color-texts: #444444;
+    --font-size-banner-big: 2rem;
+    --font-size-medium:1.5rem;
+    --font-size-banner: 1rem;
+    --font-size-text: 1rem;
+  }
+
+
+.main-container {
+ min-height: 100vh;
+ overflow: hidden;
+ display: block;
+ position: relative;
+ background-color: white;
+}
+
+
+.navbar-plombier {
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  height: 4.5rem;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+
+.navbar-nav {
+  background-color: transparent;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-brand img {
+  width: 6rem;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  font-family: var(--font-banner);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  color: white;
+}
+
+.banner span {
+  font-size: var(--font-size-banner-big);
+  font-family: var(--font-banner);
+  color: var(--orange);
+  font-weight: bold;
+}
+
+.banner h1 {
+  font-size: var(--font-size-banner-big);
+  font-family: var(--font-banner);
+  font-weight: bold;
+}
+.banner p {
+  font-size: var(--font-size-banner);
+  font-family: var(--font-texts);
+  color: white;
+}
+
+.button {
+  padding: 8px 15px 8px 15px;
+  border-radius: 50px;
+  display: inline-block;
+  font-weight: bold;
+  font-family: var(--font-texts);
+  color: white;
+}
+.button:hover {
+  text-decoration: none;
+}
+
+.button-orange {
+  color: white;
+  background: var(--orange);
+  font-weight: lighter;
+}
+
+.button-orange:hover{
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+
+.rounded-hour {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 3px solid var(--orange);
+  display: inline-block;
+  padding: 12px 21px;
+  font-size: var(--font-size-banner-big);
+  font-family: var(--font-banner);
+  color: var(--orange);
+}
+
+h2 {
+  font-size: var(--font-size-medium);
+  font-family: var(--font-banner);
+  color: var(--dark-blue);
+}
+
+p {
+  font-size: var(--font-size-text);
+  font-family: var(--font-banner);
+  color: var(--dark-blue);
+}
+
+.dropdown-divider {
+  margin: 1rem;
+  width: 150px;
+  border-top: 1px solid var(--blue);
+}
+
+.card {
+  border: none;
+  margin: 0.5rem;
+}
+
+.card-columns {
+  max-width: 1000px;
+  margin: auto;
+}
+
