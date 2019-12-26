@@ -3,8 +3,8 @@
     --dark-blue: #3D5A80;
     --blue: #98C1D9;
     --light-blue: #E0FBFC;
-    --dark-grey:#293241;
-    --orange: #ED8962;
+    --dark-grey:#0F202D;
+    --orange: #f8b400;
     --font-banner: 'Rubik', sans-serif;
     --font-color-banner: white;
     --font-texts: 'Karla', sans-serif;
@@ -21,8 +21,8 @@
  overflow: hidden;
  display: block;
  position: relative;
- padding-bottom: 5rem; /* height of your footer */
-}
+/* padding-bottom: 5rem;  height of your footer
+*/}
 
 
 .navbar-plombier {
@@ -53,6 +53,7 @@
 }
 
 .banner {
+  height: 100vh;
   background-size: cover;
   background-position: center;
   padding: 150px 0;
@@ -102,17 +103,18 @@
   color: white;
   font-weight: bolder;
 }
+.container-blue {
+  background-color: var(--dark-grey);
+}
 
-.rounded-hour {
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-  border: 3px solid var(--orange);
-  display: inline-block;
-  padding: 12px 21px;
-  font-size: var(--font-size-banner-big);
+.icon-home {
+  font-size: 4rem;
   font-family: var(--font-banner);
   color: var(--orange);
+}
+
+h5 {
+  font-weight: 400;
 }
 
 h2 {
@@ -125,6 +127,7 @@ p {
   font-size: var(--font-size-text);
   font-family: var(--font-banner);
   color: var(--dark-blue);
+  font-weight: 400;
 }
 
 .dropdown-divider {
@@ -153,5 +156,12 @@ p {
 
 .contact-links a:hover {
   opacity: 1;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
 }
 
