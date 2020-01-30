@@ -24,6 +24,10 @@
 /* padding-bottom: 5rem;  height of your footer
 */}
 
+.text-orange {
+  color: var(--orange);
+}
+
 
 .navbar-plombier {
   justify-content: space-between;
@@ -52,6 +56,10 @@
   width: 6rem;
 }
 
+#navbar-dp33 {
+  color: var(--orange);
+}
+
 .banner {
   height: 100vh;
   background-size: cover;
@@ -69,10 +77,10 @@
   font-weight: bold;
 }
 
-.banner h1 {
+.navbar h1 {
   font-size: var(--font-size-banner-big);
   font-family: var(--font-banner);
-  font-weight: bold;
+  color: var(--orange);
 }
 .banner p {
   font-size: var(--font-size-banner);
