@@ -4,6 +4,7 @@
     --blue: #98C1D9;
     --light-blue: #E0FBFC;
     --dark-grey:#34325E;
+    --light-grey:#F4F4F4;
     --orange: #f8b400;
     --font-banner: 'Poppins', sans-serif;
     --font-color-banner: white;
@@ -42,6 +43,10 @@
 
 .text-blue {
  color: var(--dark-grey);
+}
+
+.bg-grey {
+  background-color: var(--light-grey);
 }
 
 
@@ -134,7 +139,7 @@
 }
 
 .icon-home {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: var(--font-banner);
   color: var(--orange);
 }
