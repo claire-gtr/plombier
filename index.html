@@ -19,7 +19,7 @@
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -118,11 +118,14 @@
 
       <a class="anchor" id="prices"></a>
       <div class="container py-5">
-        <div class="row">
-          <div class="col text-center mb-5">
+        <div class="row h-100">
+          <div class="col-6 text-left my-auto">
             <h2>NOS TARIFS</h2>
             <p>Avec Plombier Dépannage 33 vous êtes assurés du meilleur prix pour les problèmes de plomberie et chauffage</p>
             <p>N"hésitez pas à nous contacter ci-dessous pour plus d'informations !</p>
+          </div>
+          <div class="col-6 my-auto">
+            <img class="w-100" src="source/assets/images/prices.png", alt="prices">
           </div>
         </div>
         <div class="row">
@@ -367,53 +370,47 @@
 
       <a class="anchor" id="contact"></a>
       <div class="container-fluid py-5">
-        <div class="card mt-3 p-3">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-grey text-center">CONTACTEZ-NOUS</h2>
-              <p class="text-center">Vous avez des questions ?</p>
-              <p class="text-center">Vous souhaitez un intervention rapide et au prix juste ?</p>
-              <p class="text-center">Écrivez-nous ou appelez-nous et nous vous répondrons rapidement.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <p class="text-center contact-links"> <a href="mailto:">mail@mail.com</a></p>
-              <p class="text-center contact-links"> <a href="tel:+41797585175">+33 45 45 45 45</a></p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-11 offset-1 col-lg-4 offset-lg-4">
-              <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
-                <fieldset id="fs-frm-inputs">
-                  <div class="row">
-                    <div class="col">
-                      <div class="form-group">
-                        <label for="full-name">Nom</label>
-                        <input type="text" class="form-control" name="name" id="full-name" placeholder="Votre nom" required=""></div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="form-group">
-                        <label for="email-address">Email</label>
-                        <input type="email" class="form-control" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+        <div class="row h-100">
+          <div class="col-12 col-md-6 pl-0">
+            <h2 class="text-grey text-left">CONTACTEZ-NOUS</h2>
+            <p class="text-left">Vous avez des questions ? Vous souhaitez un intervention rapide et au prix juste ?</p>
+            <p>Écrivez-nous ou appelez-nous et nous vous répondrons rapidement.</p>
+            <div class="row">
+              <div class="col">
+                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
+                  <fieldset id="fs-frm-inputs">
+                    <div class="row">
+                      <div class="col">
+                        <div class="form-group">
+                          <label for="full-name">Nom</label>
+                          <input type="text" class="form-control" name="name" id="full-name" placeholder="Votre nom" required=""></div>
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea rows="5" class="form-control" name="message" id="message" placeholder="Écrivez ici votre message" required=""></textarea>
+                    <div class="row">
+                      <div class="col">
+                        <div class="form-group">
+                          <label for="email-address">Email</label>
+                          <input type="email" class="form-control" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-                </fieldset>
-                <input type="submit" value="Envoyer" class= "btn w-100 btn-dark">
-              </form>
+                    <div class="row">
+                      <div class="col">
+                        <div class="form-group">
+                          <label for="message">Message</label>
+                          <textarea rows="5" class="form-control" name="message" id="message" placeholder="Écrivez ici votre message" required=""></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                  </fieldset>
+                  <input type="submit" value="Envoyer" class= "btn w-100 btn-dark">
+                </form>
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-md-6 my-auto">
+            <img class="w-100" src="source/assets/images/contact.png", alt="Contact">
           </div>
         </div>
       </div>
@@ -427,7 +424,7 @@
     <script>
       var options = {
         stringsElement: '#typed-strings',
-        typeSpeed: 100
+        typeSpeed: 50
       }
 
       var typed = new Typed("#typed", options);
