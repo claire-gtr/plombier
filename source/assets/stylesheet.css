@@ -132,9 +132,6 @@
   color: white;
   font-weight: bolder;
 }
-.container-blue {
-  background-color: var(--dark-grey);
-}
 
 .icon-home {
   font-size: 4rem;
