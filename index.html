@@ -40,7 +40,7 @@
           <a class="navbar-brand" href="#">
             <img class="logo" src="source/assets/images/logo_dp33.png", alt="Logo DP 33">
           </a>
-          <a class="nav-link my-auto d-none d-md-block" id="navbar-dp33">DÉPANNAGE PLOMBIER 33  -  24/7</a>
+          <a class="nav-link my-auto d-none d-md-block" id="navbar-dp33">DÉPANNAGE PLOMBIER 33</a>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -50,6 +50,9 @@
           <ul class="navbar-nav mr-auto text-center">
             <li class="nav-item">
               <a class="button button-orange" href="#contact">Nous contacter</a>
+            </li>
+            <li class="nav-item" id="navbar-dp33">
+              <a class="nav-link my-auto d-none d-md-block" id="navbar-dp33">24 / 7</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">QUI SOMMES NOUS ?</a>
@@ -78,7 +81,7 @@
       <div class="container-fluid container-blue">
         <div class="row">
           <div class="col-12">
-            <small class="text-orange">* 149€<sup>ttc</sup> les week-end et en semaine après 20h, 53€<sup>ttc</sup> l'heure supplémentaire en semaine avant 20h, 69€<sup>ttc</sup> l'heure supplémentaire en semaine après 20h et les week-end. Frais kilométirques : zone ok et au delà </small>
+            <small class="text-orange">* 149€<sup>ttc</sup> les week-end et en semaine après 20h, 53€<sup>ttc</sup> l'heure supplémentaire en semaine avant 20h, 69€<sup>ttc</sup> l'heure supplémentaire en semaine après 20h et les week-end. Valable sur une zone de 20km autour d'Artigues (33000)</small>
           </div>
         </div>
         <div class="row mt-5">
@@ -120,7 +123,7 @@
       <div class="container py-5">
         <div class="row h-100">
           <div class="col-6 text-left my-auto">
-            <h2>NOS TARIFS</h2>
+            <h2 class="text-blue">NOS TARIFS</h2>
             <p>Avec Plombier Dépannage 33 vous êtes assurés du meilleur prix pour les problèmes de plomberie et chauffage</p>
             <p>N"hésitez pas à nous contacter ci-dessous pour plus d'informations !</p>
           </div>
@@ -372,7 +375,7 @@
       <div class="container-fluid py-5">
         <div class="row h-100">
           <div class="col-12 col-md-6 pl-0">
-            <h2 class="text-grey text-left">CONTACTEZ-NOUS</h2>
+            <h2 class="text-blue text-left">CONTACTEZ-NOUS</h2>
             <p class="text-left">Vous avez des questions ? Vous souhaitez un intervention rapide et au prix juste ?</p>
             <p>Écrivez-nous ou appelez-nous et nous vous répondrons rapidement.</p>
             <div class="row">
@@ -382,29 +385,26 @@
                     <div class="row">
                       <div class="col">
                         <div class="form-group">
-                          <label for="full-name">Nom</label>
-                          <input type="text" class="form-control" name="name" id="full-name" placeholder="Votre nom" required=""></div>
+                          <input type="text" class="form-control shadow" name="name" id="full-name" placeholder="Votre nom*" required=""></div>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col">
                         <div class="form-group">
-                          <label for="email-address">Email</label>
-                          <input type="email" class="form-control" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                          <input type="email" class="form-control shadow" name="_replyto" id="email-address" placeholder="Votre email*" required="">
                         </div>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col">
                         <div class="form-group">
-                          <label for="message">Message</label>
-                          <textarea rows="5" class="form-control" name="message" id="message" placeholder="Écrivez ici votre message" required=""></textarea>
+                          <textarea rows="5" class="form-control shadow" name="message" id="message" placeholder="Votre message*" required=""></textarea>
                         </div>
                       </div>
                     </div>
                     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                   </fieldset>
-                  <input type="submit" value="Envoyer" class= "btn w-100 btn-dark">
+                  <input type="submit" value="Envoyer" class= "btn w-100 btn-dp">
                 </form>
               </div>
             </div>
@@ -429,5 +429,32 @@
 
       var typed = new Typed("#typed", options);
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+      </script>
   </head>
 </html>

@@ -28,6 +28,22 @@
   color: var(--orange);
 }
 
+.btn-dp {
+  background-color: var(--dark-grey);
+  color: white;
+  padding: 1rem 0.5rem;
+}
+
+.btn-dp:hover {
+  color: white;
+  font-weight: bolder;
+  border-radius: 2px;
+}
+
+.text-blue {
+ color: var(--dark-grey);
+}
+
 
 .navbar-plombier {
   justify-content: space-between;
@@ -172,7 +188,15 @@ p {
 a.anchor {
     display: block;
     position: relative;
-    top: -100px;
+    top: -75px;
     visibility: hidden;
 }
+
+.form-control {
+  border: none;
+  padding: 2rem 1rem;
+}
+
+
+
 
