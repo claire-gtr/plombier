@@ -75,6 +75,8 @@
 
 .navbar-collapse {
   flex-grow: 0;
+  background-color: white;
+  text-align: center;
 }
 
 .navbar-brand img {
